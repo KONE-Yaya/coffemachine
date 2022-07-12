@@ -4,28 +4,6 @@ public class Drink implements  IDrink{
 
     final Logger LOG = Logger.getLogger(Drink.class.getName());
 
-    enum Drinks {
-
-        Tea("Tea", "T"),
-        Coffee("Coffee", "C"),
-        Chocolate("Chocolate", "H");
-
-        private final String label;
-        private final String code;
-
-        private Drinks(String label, String code) {
-            this.label = label;
-            this.code = code;
-        }
-        public String getLabel() {
-            return label;
-        }
-
-        public String getCode() {
-            return code;
-        }
-    }
-
     private String type;
     private int sugar;
 
